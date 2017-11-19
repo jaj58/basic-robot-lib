@@ -6,7 +6,7 @@
 	free to edit and modify as you see fit but give credit where credit is due /s
 */
 
-c_robot::c_robot(const byte left_direction_pin, const byte left_speed_pin, const byte right_direction_pin, 
+c_robot::c_robot(const byte left_direction_pin, const byte left_speed_pin, const byte right_direction_pin,
 	const byte right_speed_pin, const float time_taken_one_rotation = 1200):
 left_dir_pin(left_direction_pin), right_dir_pin(right_direction_pin), left_speed_pin(left_speed_pin),
 right_speed_pin(right_speed_pin), time_taken_one_rotation_ms(time_taken_one_rotation){
@@ -18,7 +18,7 @@ c_robot::c_robot(const byte left_direction_pin, const byte left_speed_pin, const
 	const byte right_speed_pin, const byte sonar_trigger_pin,
 	const byte sonar_echo_pin, const float time_taken_one_rotation):
 left_dir_pin(left_direction_pin), right_dir_pin(right_direction_pin), left_speed_pin(left_speed_pin),
-right_speed_pin(right_speed_pin),sonar_trigger_pin(sonar_trigger_pin), 
+right_speed_pin(right_speed_pin),sonar_trigger_pin(sonar_trigger_pin),
 sonar_echo_pin(sonar_echo_pin), time_taken_one_rotation_ms(time_taken_one_rotation){
 }
 
@@ -110,7 +110,7 @@ float c_robot::get_time_taken_per_rot_ms() const {
 	return time_taken_one_rotation_ms;
 }
 byte c_robot::get_sonar_trigger_pin() const{
-	return sonar_trigger_pin
+	return sonar_trigger_pin;
 }
 byte c_robot::get_sonar_echo_pin() const{
 	return sonar_echo_pin;
@@ -154,7 +154,7 @@ float c_robot::sonar_duration(const bool print_debug){
 	digitalWrite(sonar_trigger_pin, HIGH);
 	delayMicroseconds(10);
 	digitalWrite(sonar_trigger_pin, LOW);
-	auto duration = pulseIn(echo, HIGH);
+	auto duration = pulseIn(sonar_echo_pin, HIGH);
 	if (print_debug){
 		print_sonar_debug(duration);
 	}
