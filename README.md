@@ -8,7 +8,7 @@ https://github.com/jaj58/robot-lib
 
 # summary
 
-# simple constructor which takes in the pins you have your motor's connected to andif wanted possibility to define the time one rotation takes in ms
+simple constructor which takes in the pins you have your motor's connected to andif wanted possibility to define the time one rotation takes in ms
 
 example usage:
 c_robot robot(13,11,12,3);
