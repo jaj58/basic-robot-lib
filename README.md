@@ -1,4 +1,4 @@
-# robot-lib CURRENTLY UNTESTED AS OF 13/11/2017 USE AT OWN RISK (although it should work fine just a note)
+# robot-lib currently tested
 https://github.com/jaj58/robot-lib
   a simple library for usage with robot's using a arduino....
   created by jac jones (github.com/jaj58)
