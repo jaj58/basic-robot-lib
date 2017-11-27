@@ -19,7 +19,7 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-	robot.sonar_distance(true);
+  robot.sonar_distance(true);
   robot.forwards(); //simple code which will make the robot go forwards forever in this loop...
-	delay(2000);
+  delay(2000);
 }
