@@ -6,6 +6,9 @@
 	free to edit and modify as you see fit but give credit where credit is due /s
 */
 
+c_robot::c_robot(){
+};
+
 c_robot::c_robot(const byte left_direction_pin, const byte left_speed_pin, const byte right_direction_pin,
 	const byte right_speed_pin, const float time_taken_one_rotation = 1200):
 left_dir_pin(left_direction_pin), right_dir_pin(right_direction_pin), left_speed_pin(left_speed_pin),
