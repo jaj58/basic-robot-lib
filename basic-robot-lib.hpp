@@ -13,6 +13,7 @@ class c_robot{
   float time_taken_one_rotation_ms;
 
 public:
+	c_robot();
 	c_robot(const byte left_direction_pin, const byte left_speed_pin, const byte right_direction_pin,
 		const byte right_speed_pin, const float time_taken_one_rotation);
 
